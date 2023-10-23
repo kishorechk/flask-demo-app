@@ -1,0 +1,6 @@
+# flask-demo-app-chart/Chart.yaml
+
+apiVersion: v2
+name: flask-demo-app-chart
+description: A Helm chart for the Flask demo application
+version: 0.1.0

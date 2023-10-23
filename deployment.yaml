@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flask-demo-app
+  name: flask-demo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-demo-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flask-demo-app
+    spec:
+      containers:
+      - image: flask-demo-app:1.0.1
+        name: flask-demo-app
+        imagePullPolicy: IfNotPresent
+        resources: {}
+status: {}
